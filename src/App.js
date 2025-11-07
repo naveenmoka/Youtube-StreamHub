@@ -1,7 +1,14 @@
 import React from "react";
+import Head from "./Components/Head";
+import Body from "./Components/Body";
 
 const App = () => {
-  return <div className="bg-red-500">App</div>;
+  return (
+    <div>
+      <Head />
+      <Body />
+    </div>
+  );
 };
 
 export default App;

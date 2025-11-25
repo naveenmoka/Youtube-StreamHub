@@ -1,4 +1,4 @@
-# YouTube StreamHub: A Modern YouTube-Style Platform Built with React
+# YouTube StreamHub: A Modern YouTube-Style Platform
 
 ## 🚀 Overview
 
@@ -15,15 +15,15 @@ The application delivers a smooth, feature-rich user experience:
 - **Live Search Suggestions:** Implements live search suggestions as the user types, mimicking YouTube's instant search capability.
   - Includes **Debouncing** and **Caching** logic for optimized API usage and reduced server load.
 - **Dynamic Video Feed:** Displays a curated list of trending videos fetched directly via the **YouTube Data API v3**.
-- **Search Caching using Redux Toolkit:**Previously searched queries load instantly from cache.
+- **Search Caching using Redux Toolkit:** Previously searched queries load instantly from cache.
   This reduces API usage and makes the search bar feel fast and responsive.
-- **Global State Management with Redux:**Stores search cache, chat messages, and UI states in a centralized store.
+- **Global State Management with Redux:** Stores search cache, chat messages, and UI states in a centralized store.
   Helps maintain a clean architecture and avoids prop drilling.
-- **Routing with React Router:**Handles navigation between home, watch page, and dynamic video pages.
+- **Routing with React Router:** Handles navigation between home, watch page, and dynamic video pages.
   Provides smooth, SPA-like transitions without page reloads.
-- **Clean Component-Based Architecture:**Structured with reusable components like Header, Sidebar, VideoCard, and LiveChat.
+- **Clean Component-Based Architecture:** Structured with reusable components like Header, Sidebar, VideoCard, and LiveChat.
   Helps maintain readability, scalability, and long-term maintainability.
-- **Tailwind CSS for Modern UI:**Used for layout, responsiveness, spacing, and interactive effects.
+- **Tailwind CSS for Modern UI:** Used for layout, responsiveness, spacing, and interactive effects.
   Helps in building a clean and minimal UI quickly.
 - **Watch Page with Video Details:** Renders the video player, title, channel information, description, and key statistics using dynamic routing.
 - **Real-Time Live Chat Simulation:** Generates random names and short chat messages in a buffer to mimic a dynamic live chat experience with smooth UI scrolling.

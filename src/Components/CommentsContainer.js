@@ -2,45 +2,45 @@ import React from "react";
 
 const CommentData = [
   {
-    name: "Akshay Saini",
-    text: "Lorem ipsum dolor sit amet, consectetur adip",
+    name: "Rohit Verma",
+    text: "Absolutely loved this video! The editing is on point 🔥",
     replies: [],
   },
   {
-    name: "Akshay Saini",
-    text: "Lorem ipsum dolor sit amet, consectetur adip",
+    name: "Priya Nanduri",
+    text: "The background music is so addictive. Anyone knows the track name?",
     replies: [
       {
-        name: "Akshay Saini",
-        text: "Lorem ipsum dolor sit amet, consectetur adip",
+        name: "Sanjay Kumar",
+        text: "Check the description! It's mentioned there.",
         replies: [],
       },
       {
-        name: "Akshay Saini",
-        text: "Lorem ipsum dolor sit amet, consectetur adip",
+        name: "Ayesha Khan",
+        text: "I Shazamed it — It's from the movie OST. Amazing pick!",
         replies: [
           {
-            name: "Akshay Saini",
-            text: "Lorem ipsum dolor sit amet, consectetur adip",
+            name: "Priya Nanduri",
+            text: "Ahhh thank you! Been searching everywhere 😭",
             replies: [
               {
-                name: "Akshay Saini",
-                text: "Lorem ipsum dolor sit amet, consectetur adip",
+                name: "Harsha P",
+                text: "This song deserves to be on Spotify asap!",
                 replies: [
                   {
-                    name: "Akshay Saini",
-                    text: "Lorem ipsum dolor sit amet, consectetur adip",
+                    name: "Rishi Patel",
+                    text: "It is already uploaded, check the official channel 🙂",
                     replies: [
                       {
-                        name: "Akshay Saini",
-                        text: "Lorem ipsum dolor sit amet, consectetur adip",
+                        name: "Ayesha Khan",
+                        text: "You're a lifesaver! ❤️",
                         replies: [],
                       },
                     ],
                   },
                   {
-                    name: "Akshay Saini",
-                    text: "Lorem ipsum dolor sit amet, consectetur adip",
+                    name: "Harsha P",
+                    text: "Ohh thanks da macha! Will check now.",
                     replies: [],
                   },
                 ],
@@ -52,23 +52,23 @@ const CommentData = [
     ],
   },
   {
-    name: "Akshay Saini",
-    text: "Lorem ipsum dolor sit amet, consectetur adip",
+    name: "Naveen Moka",
+    text: "This deserves way more views! So underrated.",
     replies: [],
   },
   {
-    name: "Akshay Saini",
-    text: "Lorem ipsum dolor sit amet, consectetur adip",
+    name: "Sneha Reddy",
+    text: "Watched this like 10 times today 😂 Can't get over it!",
     replies: [],
   },
   {
-    name: "Akshay Saini",
-    text: "Lorem ipsum dolor sit amet, consectetur adip",
+    name: "Karthik Raj",
+    text: "Director nailed the visuals. Such a vibe video!",
     replies: [],
   },
   {
-    name: "Akshay Saini",
-    text: "Lorem ipsum dolor sit amet, consectetur adip",
+    name: "Chandana S",
+    text: "Perfect blend of music and cinematography. Loved it ❤️",
     replies: [],
   },
 ];

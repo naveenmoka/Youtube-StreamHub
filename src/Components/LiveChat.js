@@ -15,24 +15,31 @@ const LiveChat = () => {
       dispatch(
         addMessage({
           name: generateRandomName(),
-          message: makeRandomMessage(20) + "🚀",
+          message: makeRandomMessage(),
         })
       );
     }, 2000);
     return () => clearInterval(i);
   }, []);
+
   return (
     <>
-      <div className=" w-full h-[600px] ml-2 p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
-        <div>
+      {/* Chat Window */}
+      <div
+        className="w-full h-[600px] ml-2 p-4 border border-gray-300 bg-white rounded-xl 
+                      shadow-md overflow-y-scroll flex flex-col-reverse"
+      >
+        <div className="space-y-3">
           {chatMessages.map((c, i) => (
             <ChatMessage key={i} name={c.name} message={c.message} />
           ))}
         </div>
       </div>
 
+      {/* Input Box */}
       <form
-        className="w-full p-2 ml-2 border border-black mt-2"
+        className="w-full p-3 ml-2 border border-gray-300 rounded-xl 
+                   mt-3 bg-white shadow-sm flex items-center gap-3"
         onSubmit={(e) => {
           e.preventDefault();
           dispatch(addMessage({ name: "Naveen Moka", message: liveMessage }));
@@ -40,14 +47,21 @@ const LiveChat = () => {
         }}
       >
         <input
-          className="px-2 w-80 "
+          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg 
+                     focus:ring-2 focus:ring-blue-300 focus:outline-none 
+                     text-md shadow-sm"
           type="text"
           value={liveMessage}
-          onChange={(e) => {
-            setLiveMessage(e.target.value);
-          }}
+          placeholder="Type your message..."
+          onChange={(e) => setLiveMessage(e.target.value)}
         />
-        <button className="px-2 mx-2 bg-green-200">Send</button>
+
+        <button
+          className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm 
+                     hover:bg-blue-700 transition-all shadow-sm"
+        >
+          Send
+        </button>
       </form>
     </>
   );

@@ -6,7 +6,11 @@ const Body = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <Outlet />
+
+      {/* Main content area */}
+      <div className={`flex-1 transition-all duration-200 overflow-x-hidden`}>
+        <Outlet />
+      </div>
     </div>
   );
 };

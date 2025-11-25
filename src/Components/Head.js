@@ -50,13 +50,15 @@ const Head = () => {
           src="https://static.vecteezy.com/system/resources/previews/002/292/406/non_2x/hamburger-menu-line-icon-free-vector.jpg"
           alt="menu"
         />
-        <img
-          className="h-6 mt-1 mx-2 cursor-pointer"
-          src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
-          alt="youtube-logo"
-        />
+        <a href="/" className="flex items-center">
+          <img
+            className="h-6 mb-2 mx-4 cursor-pointer"
+            src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
+            alt="youtube-logo"
+          />
+        </a>
       </div>
-      <div className="col-span-10 px-10">
+      <div className="col-span-10 px-10 relative">
         <div>
           <input
             className="ml-20 w-1/2 px-5 border border-gray-400 p-2 rounded-l-full"
@@ -67,15 +69,15 @@ const Head = () => {
             onBlur={() => setShowSuggestions(false)}
           />
           <button className="border border-gray-400 p-2 rounded-r-full">
-            🔍
+            🔍︎
           </button>
         </div>
         {showSuggestions && (
-          <div className="ml-20 fixed bg-white py-2 px-2 w-[36rem] shadow-lg rounded-lg border border-gray-100">
+          <div className="ml-20 absolute z-50 bg-white py-2 px-2 w-[36rem] shadow-lg rounded-lg border border-gray-100">
             <ul>
               {suggestions.map((s) => (
                 <li key={s} className="py-2 px-3 shadow-sm hover:bg-gray-100">
-                  🔍 {s}
+                  🔍︎ {" " + s}
                 </li>
               ))}
             </ul>

@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# YouTube StreamHub: A Modern YouTube-Style Platform Built with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Overview
 
-## Available Scripts
+YouTube StreamHub is a **modern frontend web application** that replicates core features of a platform like YouTube, including dynamic video browsing, an optimized search experience, and a simulated real-time chat.
 
-In the project directory, you can run:
+This project was built to practice real-world frontend architecture, focusing on **API integration, efficient state management, advanced UI/UX workflows**, and building a scalable component design using the latest React concepts and Hooks.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application delivers a smooth, feature-rich user experience:
 
-### `npm test`
+- **Live Search Suggestions:** Implements live search suggestions as the user types, mimicking YouTube's instant search capability.
+  - Includes **Debouncing** and **Caching** logic for optimized API usage and reduced server load.
+- **Dynamic Video Feed:** Displays a curated list of trending videos fetched directly via the **YouTube Data API v3**.
+- **Search Caching using Redux Toolkit:**Previously searched queries load instantly from cache.
+  This reduces API usage and makes the search bar feel fast and responsive.
+- **Global State Management with Redux:**Stores search cache, chat messages, and UI states in a centralized store.
+  Helps maintain a clean architecture and avoids prop drilling.
+- **Routing with React Router:**Handles navigation between home, watch page, and dynamic video pages.
+  Provides smooth, SPA-like transitions without page reloads.
+- **Clean Component-Based Architecture:**Structured with reusable components like Header, Sidebar, VideoCard, and LiveChat.
+  Helps maintain readability, scalability, and long-term maintainability.
+- **Tailwind CSS for Modern UI:**Used for layout, responsiveness, spacing, and interactive effects.
+  Helps in building a clean and minimal UI quickly.
+- **Watch Page with Video Details:** Renders the video player, title, channel information, description, and key statistics using dynamic routing.
+- **Real-Time Live Chat Simulation:** Generates random names and short chat messages in a buffer to mimic a dynamic live chat experience with smooth UI scrolling.
+- **Responsive Sidebar & Header:** The navigation sidebar opens and closes based on a global UI state, ensuring responsiveness across different screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack & Architecture
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is built on a clean, scalable component architecture leveraging modern frontend tools.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Category                | Technologies Used                                                                               |
+| :---------------------- | :---------------------------------------------------------------------------------------------- |
+| **Frontend Core**       | **React.js** (Functional Components & Hooks), **JavaScript ES6+**                               |
+| **State Management**    | **Redux Toolkit** (Used for search cache, chat messages, and global UI state), **Custom Hooks** |
+| **Styling & UI**        | **Tailwind CSS** (Utility-first styling, responsive layouts, transitions)                       |
+| **Routing**             | **React Router** (Declarative routing for dynamic navigation)                                   |
+| **Data & Optimization** | **YouTube Data API v3**, **Debouncing & API Optimization**                                      |
+| **Architecture**        | Clean Component Architecture, Avoids Prop Drilling                                              |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Setup and Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these steps to get a local copy of the project running on your machine.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js (LTS recommended)
+- npm or yarn
+- A valid **YouTube Data API v3 Key**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1.  **Clone the Repository:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    git clone https://github.com/naveenmoka
+    cd youtube-streamhub
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2.  **Install Dependencies:**
 
-### Code Splitting
+    ```bash
+    npm install
+    # or yarn install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.  **Configure API Key:**
+    Create a file named `.env` in the root directory and add your YouTube API key:
 
-### Analyzing the Bundle Size
+    ```
+    REACT_APP_YOUTUBE_API_KEY=YOUR_API_KEY_HERE
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4.  **Run the Application:**
+    ```bash
+    npm start
+    # or yarn start
+    ```
+    The application should open automatically in your browser at `http://localhost:3000`.

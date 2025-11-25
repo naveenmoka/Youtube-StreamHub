@@ -1,4 +1,4 @@
-const GOOGLE_API_KEY = "AIzaSyB_7LgiRfU-Ix-mK-USwVA1U8q-0F56vA8";
+export const GOOGLE_API_KEY = "AIzaSyB_7LgiRfU-Ix-mK-USwVA1U8q-0F56vA8";
 
 export const USER_ICON =
   "https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png";

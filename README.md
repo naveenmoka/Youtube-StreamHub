@@ -1,14 +1,21 @@
 # YouTube StreamHub: A Modern YouTube-Style Platform
 
-## 🚀 Overview
+## Overview
 
 YouTube StreamHub is a **modern frontend web application** that replicates core features of a platform like YouTube, including dynamic video browsing, an optimized search experience, and a simulated real-time chat.
 
 This project was built to practice real-world frontend architecture, focusing on **API integration, efficient state management, advanced UI/UX workflows**, and building a scalable component design using the latest React concepts and Hooks.
 
+### Live Demo and Project Showcase
+
+| Feature | Link |
+| :--- | :--- |
+| **Live Application (Vercel)** | [**👉 Click to View Live App**](https://youtube-stream-499859chv-naveens-projects-632a7abc.vercel.app/) |
+| **Video Demonstration** | [**🎬 Watch Project Demo**](https://drive.google.com/file/d/196B9W2tD6-nUvvmkGkcZO3vghX8BbmdD/view?usp=sharing) |
+
 ---
 
-## ✨ Key Features
+## Key Features
 
 The application delivers a smooth, feature-rich user experience:
 
